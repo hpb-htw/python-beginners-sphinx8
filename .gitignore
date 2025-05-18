@@ -1,0 +1,17 @@
+.DS_Store
+._*
+*.pyc
+
+bin
+clear
+include
+lib
+_build/
+build/
+source/locale/*/*/*.mo
+source/_locales/*/*/*.mo
+.transifexrc
+*.pot
+*.mo
+.idea
+.venv
