@@ -85,7 +85,7 @@ msgstr "`Dive into Python 3`_ ist ein anderes großartiges Buch das online umson
 # 31a6946cd7184e00a10c9018d7f3974b
 #: ../../../source/where_to_go.rst:28
 msgid "Last but not least, python.org has `Its own tutorial!`_"
-msgstr "Zuguterletzt hat python.org sein `eigenes Tutorial! <http://docs.python.org/3/tutorial>`_"
+msgstr "Zuguterletzt hat python.org sein `eigenes Tutorial!`_"
 
 # f115eb306df240a68642600624bfac16
 #: ../../../source/where_to_go.rst:40
