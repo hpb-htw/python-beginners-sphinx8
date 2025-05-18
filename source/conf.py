@@ -7,9 +7,9 @@ from sys import stderr
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Introduction to Programming with Python'
-copyright = '2025, TODO'
-author = 'TODO'
+project = u'Introduction to Programming with Python'
+copyright = u'2012–2014, OpenTechSchool and contributors'
+author = 'OpenTechSchool and contributors'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -47,21 +47,30 @@ PO_PATH = 'source/locale/%s/LC_MESSAGES/*.po'
 class Contributors(rst.Directive):
     _GIT_COMMAND = "git log --format=%aN"
     def run(self):
+        authors = self.collect_authors_from_git()
+        translators = self.collect_translators_from_po()
+        contributors = authors.union(translators)
+        bullet_list = nodes.bullet_list()
+        for contributor in sorted(contributors, key=str.lower):
+            bullet_list.append(nodes.list_item(contributor,
+                                               nodes.paragraph(contributor, contributor)))
+        return [bullet_list]
+
+    def collect_authors_from_git(self) -> set:
+        """
+        :return: set of authors or empty set
+        """
         try:
-            return self.collect_authors_from_git()
+            authors = set(subprocess.check_output(self._GIT_COMMAND.split())
+                          .splitlines())
+            return set(map(lambda _a: unicodedata.normalize('NFC', _a.decode('utf-8')), authors))
         except (AttributeError, OSError, subprocess.CalledProcessError) as e:
             print("Project is not in a git repo", file=stderr)
-            return []
+            return set()
 
-    def collect_authors_from_git(self) -> []:
-        """
-        @throws CalledProcessError, OSError
-        :return: set of author
-        """
-        authors = set(subprocess.check_output(self._GIT_COMMAND.split())
-                      .splitlines())
-        authors = set(map(lambda _a: unicodedata.normalize('NFC', _a.decode('utf-8')), authors))
+    def collect_translators_from_po(self) -> set:
         lang = self.state.document.settings.env.config.language
+        translators = set()
         for fname in glob.iglob(PO_PATH % lang):
             with open(fname) as po:
                 lines = iter(po)
@@ -71,14 +80,12 @@ class Contributors(rst.Directive):
                 for line in lines:
                     if not line.startswith("# "):
                         break
-                    translator = parseaddr(line[2:])[0]
-                    authors.add(translator)
+                    address = line[2:].split(',')[0].strip()
+                    translator = parseaddr(address)[0]
+                    if len(translator) > 0:
+                        translators.add(translator)
+        return translators
 
-        bullet_list = nodes.bullet_list()
-        for author in sorted(authors, key=str.lower):
-            bullet_list.append(nodes.list_item(author,
-                                               nodes.paragraph(author, author)))
-        return [bullet_list]
 
 
 def setup(app):

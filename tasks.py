@@ -65,9 +65,13 @@ def build_all(c, target:str=MAIN_TARGET):
 @task
 def clean(c, language:str=None, target:str=MAIN_TARGET):
     if language is not None:
-        c.run(f'rm -rf {os.path.join(BUILD_DIR, target, language)}')
+        c.run(f'rm -rfv {os.path.join(BUILD_DIR, target, language)}')
     else:
-        c.run(f'rm -rf {os.path.join(BUILD_DIR, target)}')
+        c.run(f'rm -rfv {os.path.join(BUILD_DIR, target)}')
+
+@task
+def clean_all(c):
+    c.run(f'rm -rfv {BUILD_DIR}/*')
 
 @task
 def serve(c, port:int=SERVE_PORT, serve_dir:str=None):
