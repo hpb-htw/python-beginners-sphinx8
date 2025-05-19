@@ -34,26 +34,17 @@ def build(c, language:str=None, target:str=MAIN_TARGET):
     elif language not in LANGUAGES:
         exit(f'Language {language} not available.')
     if os.path.isdir(LOCALE_DIR % language):
-        cmd = compile_pos(language)
-        c.run(cmd)
-    args = [
-        'sphinx-build',
-        '-b',  # builder type
-        target,
-        '-d',  # doctree path
-        os.path.join(BUILD_DIR, 'doctrees'),
-        '-D',
-        'language=%s' % language,
-        SOURCE_DIR,
-        os.path.join(BUILD_DIR, target, language),  # output path
-    ]
-    c.run(' '.join(args))
+        compile_pos(c,language)
+
+    src = SOURCE_DIR
+    dest = os.path.join(BUILD_DIR, target, language)
+    arg = f"sphinx-build -b {target} -d {os.path.join(BUILD_DIR, 'doctrees')} -D language={language} {src} {dest}"
+    c.run(arg)
     if 'html' in target:
         static_files = os.path.join(BASE_DIR, '_static', '*')
         target_dir = os.path.join(BUILD_DIR, target)
         c.run(f'cp {static_files} {target_dir}' )
-    print("build finished; the %s files are in %s." %
-          (target, os.path.join(BUILD_DIR, target, language)))
+    print(f"build finished; the {target} files are in {dest}.")
 
 
 @task
@@ -90,38 +81,23 @@ def update_pos(c, language:str):
     """Update .po files from the source pot files"""
     if language not in LANGUAGES:
         exit('Language %s not available.' % language)
-    gen_pots(c, language)
-    args = [
-        'sphinx-intl update',
-        '-l %s ' % language,
-        '-p',
-        os.path.join(BUILD_DIR, 'locale', language),
-        '-c',
-        os.path.join(SOURCE_DIR, 'conf.py'),
-    ]
-    c.run(' '.join(args))
+    gen_pots(c)
+    pot_dir = os.path.join(BUILD_DIR, 'gettext')
+    arg = f'sphinx-intl update -p {pot_dir} -l {language}'
+    c.run(arg)
 
 
-def compile_pos(language):
+def compile_pos(c, language):
     """Compile .po files into .mo files"""
     if language not in LANGUAGES:
         exit(f'Language {language} not available.')
-    args = [
-        'sphinx-intl build',
-        f'-l {language}',
-        # '-c',
-        # os.path.join(SOURCE_DIR, 'conf.py'),
-    ]
-    return ' '.join(args)
+    arg = f"sphinx-intl build -l {language}"
+    c.run(arg)
 
 @task
-def gen_pots(c, language='en'):
-    """Generate .pot templates from sphinx source files"""
-    args = [
-        'sphinx-build',
-        '-b gettext',
-        '-D language=%s' % language,
-        SOURCE_DIR,
-        os.path.join(BUILD_DIR, 'locale', language),
-    ]
-    c.run(' '.join(args))
+def gen_pots(c):
+    """
+    Generate .pot templates from sphinx source files
+    let sphinx Makefile to the job!
+    """
+    c.run('make gettext')
