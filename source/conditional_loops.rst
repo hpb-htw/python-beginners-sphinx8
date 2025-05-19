@@ -69,7 +69,7 @@ with a coach or another student.
 Solution
 --------
 
-::
+.. code-block:: python
 
   def forward(distance):
       while distance > 0:
