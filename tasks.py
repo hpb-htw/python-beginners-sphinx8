@@ -86,7 +86,7 @@ def update_pos(c, language:str):
     arg = f'sphinx-intl update -p {pot_dir} -l {language}'
     c.run(arg)
 
-
+@task
 def compile_pos(c, language):
     """Compile .po files into .mo files"""
     if language not in LANGUAGES:

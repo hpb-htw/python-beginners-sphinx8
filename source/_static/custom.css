@@ -1,0 +1,10 @@
+pre, dl pre, blockquote pre, li pre {
+    padding: 7px;
+    font-style: normal;
+}
+
+details.admonition-solution blockquote {
+    padding: 0;
+    margin: 0;
+}
+

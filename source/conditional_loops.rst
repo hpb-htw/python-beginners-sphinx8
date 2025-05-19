@@ -32,11 +32,6 @@ it should do (what its final output will be).
 Then copy it into a file, say :file:`sentence.py` and run it - see 
 exactly what it does. Does that match up with what you thought?
 
-.. note::
-
-   If you are using Python 2, you will need to replace ``input`` with 
-   ``raw_input`` to run the program correctly.
-
 Turtle prison
 =============
 
@@ -64,20 +59,18 @@ functions, perhaps a ``while`` loop and a bit of conditional logic.
 It's a bit of a stretch but keep at it! Don't be afraid to talk it out 
 with a coach or another student.
 
-.. rst-class:: solution
+.. admonition:: Solution
+   :collapsible:
 
-Solution
---------
+    .. code-block:: python
 
-.. code-block:: python
-
-  def forward(distance):
-      while distance > 0:
-          if turtle.distance(0,0) > 100:
-              angle = turtle.towards(0,0)
-              turtle.setheading(angle)
-          turtle.forward(1)
-          distance = distance - 1
+      def forward(distance):
+          while distance > 0:
+              if turtle.distance(0,0) > 100:
+                  angle = turtle.towards(0,0)
+                  turtle.setheading(angle)
+              turtle.forward(1)
+              distance = distance - 1
 
 
 Draw a spiral
@@ -104,23 +97,21 @@ respectively.
    To draw a spiral, the turtle has to rotate by a constant value and move
    forward by an increasing value.
 
-.. rst-class:: solution
+.. admonition:: Solution
+   :collapsible:
 
-Solution
---------
+    .. code-block:: python
 
-::
-
-    def draw_spiral(radius):
-        original_xcor = turtle.xcor()
-        original_ycor = turtle.ycor()
-        speed = 1
-        while True:
-            turtle.forward(speed)
-            turtle.left(10)
-            speed += 0.1
-            if turtle.distance(original_xcor, original_ycor) > radius:
-                break
+        def draw_spiral(radius):
+            original_xcor = turtle.xcor()
+            original_ycor = turtle.ycor()
+            speed = 1
+            while True:
+                turtle.forward(speed)
+                turtle.left(10)
+                speed += 0.1
+                if turtle.distance(original_xcor, original_ycor) > radius:
+                    break
 
 Bonus
 -----

@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Introduction to Programming with Python \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 12:57+0200\n"
+"POT-Creation-Date: 2025-05-19 15:46+0200\n"
 "PO-Revision-Date: 2015-10-01 20:36+0000\n"
 "Last-Translator: Matthew Iversen <matthew@opentechschool.org>\n"
 "Language: de\n"
@@ -25,15 +25,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/conditional_loops.rst:2 66b4fc1704674deb9a9172db3460139a
+#: ../../source/conditional_loops.rst:2 669073404adf44a48258df42e2a6aed5
 msgid "Conditional Loops"
 msgstr "Bedingte Schleifen"
 
-#: ../../source/conditional_loops.rst:4 289c46e82c414fa2895143dc72d73bc9
+#: ../../source/conditional_loops.rst:4 4070d983357f4e32b0c185aa05357170
 msgid "Introduction"
 msgstr "Einführung"
 
-#: ../../source/conditional_loops.rst:6 4d0e8f3be5354b7cb55aa212d2b7bf99
+#: ../../source/conditional_loops.rst:6 4d883a69a8154030af552e661eb79099
 msgid ""
 "Conditional loops are way to repeat something while a certain condition "
 "is satisfied, or **True**. If the condition is always satisfied (never "
@@ -48,13 +48,13 @@ msgstr ""
 " der Schleife niemals ausgeführt! In Python werden bedingte Schleifen mit"
 " der ``while``\\ -Anweisung definiert::"
 
-#: ../../source/conditional_loops.rst:23 d9177bf88ad142bda13446167330f421
+#: ../../source/conditional_loops.rst:23 fb6eef1c717546cba153af62e143d15c
 msgid "We call this part of the code the 'conditional': ``'.' not in word``"
 msgstr ""
 "Wir nennen diesen Teil des Quelltextes die 'Bedingung': ``'.' not in "
 "word``"
 
-#: ../../source/conditional_loops.rst:25 7dde9e3f650e4c1d84750dc059a8056c
+#: ../../source/conditional_loops.rst:25 d47af3fd0f92416e9c70205f4cda1611
 msgid ""
 "Whether the conditional returns True or not determines whether the code "
 "inside the ``while`` loop runs. Of course, it repeats the check every "
@@ -63,7 +63,7 @@ msgstr ""
 "Ob die Bedingung wahr (True) zurückgibt oder nicht entscheidet, ob der "
 "Quelltext innerhalb der ``while``\\ -Schleife ausgeführt wird."
 
-#: ../../source/conditional_loops.rst:29 a6a80392070f4195b687ca7987e16037
+#: ../../source/conditional_loops.rst:29 d98ff788075847bd9011842f0b156b07
 msgid ""
 "Read the code above, and see if you can summarise in your head what it "
 "should do (what its final output will be)."
@@ -71,7 +71,7 @@ msgstr ""
 "Lies den obigen Quellcode und schau, ob du im Kopf herleiten kannst, was "
 "er tut (und was die endgültige Ausgabe sein wird)."
 
-#: ../../source/conditional_loops.rst:32 a8d6b30310ca4b41b41ed6cb9ff1184d
+#: ../../source/conditional_loops.rst:32 c1df977243584122ad28085a1cbf20a9
 msgid ""
 "Then copy it into a file, say :file:`sentence.py` and run it - see "
 "exactly what it does. Does that match up with what you thought?"
@@ -79,54 +79,46 @@ msgstr ""
 "Dann kopier ihn in eine Datei, sagen wir :file:`satz.py`, und führe ihn "
 "aus -- schau genau, was er tut. Trifft das, was du dir gedacht hast, zu?"
 
-#: ../../source/conditional_loops.rst:37 07e8575206024e35b0a947e039e995d2
-msgid ""
-"If you are using Python 2, you will need to replace ``input`` with "
-"``raw_input`` to run the program correctly."
-msgstr ""
-"Falls du Python 2 benutzt, wirst du ``input``mit ``raw_input`` ersetzen "
-"müssen, um das Programm korrekt auszuführen."
-
-#: ../../source/conditional_loops.rst:41 1b89ee70f267494c99b7e28efdd35be3
+#: ../../source/conditional_loops.rst:36 3e3f8d753faf47019400c4d069735541
 msgid "Turtle prison"
 msgstr "Schildkrötengefängnis"
 
-#: ../../source/conditional_loops.rst:44 ../../source/conditional_loops.rst:89
-#: 208b822fe8414ef69b6367cfe812dc10 5358177fca964de397809bc0ca71a4f0
+#: ../../source/conditional_loops.rst:39 ../../source/conditional_loops.rst:84
+#: 7ad8e71f378e4f1aaae295f4204906c9 fb44429571534672ac275d8732afb9a4
 msgid "Exercise"
 msgstr "Übung"
 
-#: ../../source/conditional_loops.rst:46 950665125c6a4eb89caf3432024ca2a4
+#: ../../source/conditional_loops.rst:41 6bc39518c8384573ab0fe1d3665faf6d
 msgid ""
 "The turtle has been up to its usual tricks again, robbing liquor stores "
 "and building up huge gambling debts. It's time for turtle to be put into "
 "a cell that it can't get out of."
 msgstr ""
 
-#: ../../source/conditional_loops.rst:50 d577b1fdf94e4d07a70508a25638c850
+#: ../../source/conditional_loops.rst:45 577389e603a24a8fbc1a68c398af80b7
 msgid ""
 "Let's make a new version of ``forward()``. One that will turn the turtle "
 "around if it tries to go further than 100 from the origin. We'll need a "
 "``while`` loop, and some new turtle functions:"
 msgstr ""
 
-#: ../../source/conditional_loops.rst:54 966aecd745e944c4b4a46d40badb5859
+#: ../../source/conditional_loops.rst:49 d7762d62412c44989cf2e06f0e850ce4
 msgid ""
 "``turtle.distance(0, 0)`` - Returns the distance of the turtle from the "
 "origin (0, 0)"
 msgstr "``turtle.distance(0, 0)``- Entfernung der Schildkröte vom Ursprung"
 
-#: ../../source/conditional_loops.rst:56 bee1f2f151e14dda84b5908461ea43ad
+#: ../../source/conditional_loops.rst:51 d6881ca159c2473e9e8f29fbd029d15c
 msgid "``turtle.towards(0, 0)`` - Returns the angle to get back to origin (0, 0)"
 msgstr "``turtle.towards(0, 0)`` - Der Winkel, der zurück zum Ursprungspunkt führt"
 
-#: ../../source/conditional_loops.rst:57 ab49318095844c958a6d9e7220339679
+#: ../../source/conditional_loops.rst:52 09c1df8a20d44341a88d41e3353aad66
 msgid "``turtle.setheading(angle)`` - Directly sets the turtle's direction"
 msgstr ""
 "``turtle.setheading(Winkel)`` - Lege die Ausrichtung der Schildkröte "
 "direkt fest"
 
-#: ../../source/conditional_loops.rst:59 4ab08b9b913c4e45ac2055692f3a456e
+#: ../../source/conditional_loops.rst:54 cb323b9f20f74864aa22802c064df6d4
 msgid ""
 "You could try playing with a turtle in the interpreter and using these "
 "functions to check exactly what they do, if you like."
@@ -135,7 +127,7 @@ msgstr ""
 "herumzuspielen und die Funktionen zu benutzen, um genau zu sehen, was sie"
 " tut."
 
-#: ../../source/conditional_loops.rst:62 01136cdade70491b87da42ece26ac135
+#: ../../source/conditional_loops.rst:57 684b08c888434b978e3019d54a07f568
 msgid ""
 "Now you will need to implement the prison logic using these turtle "
 "functions, perhaps a ``while`` loop and a bit of conditional logic. It's "
@@ -148,16 +140,16 @@ msgstr ""
 " Scheue nicht davor zurück, deine Idee mit einem Coach oder einem anderen"
 " Lernenden durchzusprechen."
 
-#: ../../source/conditional_loops.rst:67 ../../source/conditional_loops.rst:108
-#: 05ea2a7d72014183949b7f5007e39d86 f7b25c7903ce417fbdb5554175f0d403
+#: ../../source/conditional_loops.rst:62 ../../source/conditional_loops.rst:100
+#: 2f2891e0f9564b888727fd22a5a7264c 7f0e94a073e4444db442997f36bfef2e
 msgid "Solution"
 msgstr "Lösung"
 
-#: ../../source/conditional_loops.rst:82 a1b4f382428d4fa5aa36ddc311f5877e
+#: ../../source/conditional_loops.rst:77 bb6ca9fe89fa4a2aac0367a0465edcf5
 msgid "Draw a spiral"
 msgstr "Zeichne eine Spirale"
 
-#: ../../source/conditional_loops.rst:84 e762dd695005422a8b739dfe781356ef
+#: ../../source/conditional_loops.rst:79 7b4694c450ea4b139496f348a5924c36
 msgid ""
 "Loops can be interrupted with the ``break`` statement. This is especially"
 " useful if you write an *infinite loop*, which is a loop where the "
@@ -167,7 +159,7 @@ msgstr ""
 "ist besonders nützlich, wenn du eine *Endlosschleife* schreibst, welches "
 "eine Schleife ist, deren Bedingung immer wahr (**True**) ist."
 
-#: ../../source/conditional_loops.rst:91 9607a08b8d794c9e92de8dd97e2593ee
+#: ../../source/conditional_loops.rst:86 d42770e2f8f845f9ab559cb364901220
 msgid ""
 "Write a ``while`` loop with a condition that is always **True** to draw a"
 " spiral. Interrupt the loop when the turtle reaches a certain distance "
@@ -182,7 +174,7 @@ msgstr ""
 " dem durch die ``x``\\ - und ``y``\\ -Koordinaten bestimmten Punkt zu "
 "errechnen."
 
-#: ../../source/conditional_loops.rst:96 f020a2afb8144bf89cbe4f22e8bf6169
+#: ../../source/conditional_loops.rst:91 45409defce1b4a31b88411360af130d8
 msgid ""
 "To do this you will need the ``turtle.xcor()`` and ``turtle.ycor()`` "
 "functions, which return the position of the turtle in X and Y axes "
@@ -192,20 +184,17 @@ msgstr ""
 "``turtle.ycor()``, welche die Position der Schildkröte auf der X- und "
 "Y-Achse zurückgeben."
 
-#: ../../source/conditional_loops.rst:102 f37b78940aee464aa4a905ebc50d021c
+#: ../../source/conditional_loops.rst:97 a06c16f958b94c3099fb84d34cd3db4a
 msgid ""
 "To draw a spiral, the turtle has to rotate by a constant value and move "
 "forward by an increasing value."
-msgstr ""
-"Um eine Spirale zu zeichnen, muss die Schildkröte um einen konstanten "
-"Winkel gedreht werden und dabei um eine anwachsende Strecke vorwärts "
-"bewegt werden."
+msgstr "Um eine Spirale zu zeichnen, muss die Schildkröte um einen konstanten Winkel gedreht werden und dabei um eine anwachsende Strecke vorwärts bewegt werden."
 
-#: ../../source/conditional_loops.rst:124 d9a64989561844869820d62c7e04540d
+#: ../../source/conditional_loops.rst:117 babc5e59ceca4c77b00b8d8f4d88fd8f
 msgid "Bonus"
 msgstr "Bonus"
 
-#: ../../source/conditional_loops.rst:126 b9b1e682cef04febb5175ece26061290
+#: ../../source/conditional_loops.rst:119 091238c8f72046b0b95c69cb7b4b34ec
 msgid ""
 "Can you make a conditional for this loop, so you don't need the infinite "
 "loop ``while True`` or the ``break``? Which version do you find easier to"
@@ -217,4 +206,26 @@ msgstr ""
 
 #~ msgid "Example"
 #~ msgstr ""
+
+#~ msgid ""
+#~ "If you are using Python 2, you "
+#~ "will need to replace ``input`` with "
+#~ "``raw_input`` to run the program "
+#~ "correctly."
+#~ msgstr ""
+#~ "Falls du Python 2 benutzt, wirst "
+#~ "du ``input``mit ``raw_input`` ersetzen müssen,"
+#~ " um das Programm korrekt auszuführen."
+
+#~ msgid ""
+#~ "To draw a spiral, the turtle has"
+#~ " to rotate by a constant value "
+#~ "and move forward by an increasing "
+#~ "value."
+#~ msgstr ""
+#~ "Um eine Spirale zu zeichnen, muss "
+#~ "die Schildkröte um einen konstanten "
+#~ "Winkel gedreht werden und dabei um "
+#~ "eine anwachsende Strecke vorwärts bewegt "
+#~ "werden."
 

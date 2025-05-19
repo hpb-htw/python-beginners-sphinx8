@@ -24,16 +24,16 @@ exclude_patterns = []
 # https://www.sphinx-doc.org/en/master/usage/advanced/intl.html
 language = 'en'
 locale_dirs = ["locale/"]
-
+gettext_compact = False
+gettext_uuid = True
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
-#html_theme = "sphinx_nefertiti"
+#html_theme = 'alabaster'
+html_theme = 'sphinx_nefertiti'
 html_static_path = ['_static']
-gettext_compact = False
-gettext_uuid = True
+html_style = ["custom.css"]
 
 # own directive
 from docutils.parsers import rst
