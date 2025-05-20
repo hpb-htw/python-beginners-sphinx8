@@ -13,6 +13,19 @@ pip install -r requirements.txt
 
 <https://www.sphinx-doc.org/en/master/usage/advanced/intl.html>
 
+### Workflow:
+
+* Generate POT files from source/*.rst
+* Generate/update PO files for each language
+* For each language:
+    * Translate terms in PO files of the language
+    * Compile PO file in MO files
+* Build a language or all languages
+
+ 
+
+### Command for workflow
+
 * To generate POT-file:
 
 ```bash
@@ -31,8 +44,21 @@ invoke update-pos --language=<lang>
 invoke compile-pos --language=<lang>
 ```
 
-* To update a single MO-file for debug
+* To compile a single MO-file for debug
 
 ```bash
 msgfmt "conditional_loops.po" -o "locale/de/LC_MESSAGES/conditional_loops.mo"
 ```
+
+* To build a language
+
+```bash
+invoke build --language=<lang>
+```
+
+* To build all languages
+
+```bash
+invoke build-all
+```
+

@@ -8,6 +8,8 @@ SOURCE_DIR = os.path.join(BASE_DIR, 'source')
 LOCALE_DIR = os.path.join(SOURCE_DIR, 'locale',
                           '%s', 'LC_MESSAGES')
 DOCTREES_DIR = os.path.join(BUILD_DIR, 'doctrees')
+POT_DIR = os.path.join(BUILD_DIR, 'gettext')
+
 LANGUAGES = {'en', 'de', 'ru', 'ko', 'es_CL', 'ro'}
 MAIN_TARGET = 'html'
 REPOSITORY = 'git@github.com:OpenTechSchool/python-beginners.git'
@@ -62,8 +64,7 @@ def clean(c, language:str=None, target:str=MAIN_TARGET):
 
 @task
 def clean_all(c, verbose:bool=False):
-    # TODO: use unix command to remove everything under {build}
-    c.run("make clean")
+    c.run("sphinx-build -M clean source build")
 
 @task
 def serve(c, port:int=SERVE_PORT, serve_dir:str=None):
@@ -76,8 +77,7 @@ def update_pos(c, language:str):
     if language not in LANGUAGES:
         exit('Language %s not available.' % language)
     gen_pots(c)
-    pot_dir = os.path.join(BUILD_DIR, 'gettext')
-    arg = f'sphinx-intl update -p {pot_dir} -l {language}'
+    arg = f'sphinx-intl update -p {POT_DIR} -l {language}'
     c.run(arg)
 
 @task
