@@ -3,15 +3,22 @@
 # This file is distributed under the same license as the Introduction to
 # Programming with Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
-#
-#, fuzzy
+# 
+# Translators:
+# Kristian Rother <krother@academis.eu>, 2013
+# Robert Lehmann <transifex@robertlehmann.de>, 2013
+# Benjamin Kampmann <ben@opentechschool.org>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python \n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 11:05+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2013-10-24 23:20+0000\n"
+"Last-Translator: Matthew Iversen <matthew@opentechschool.org>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
 "Language-Team: de <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -20,7 +27,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/index.rst:7 c1153d0d05c046628d567ae6b9892858
-msgid "Introduction to Programming with Python documentation"
-msgstr ""
+#: ../../source/index.rst:2 7cb8c45dd1064240ad545f2265526c5e
+msgid "Introduction to Programming with Python"
+msgstr "Programmiereinführung mit Python"
 
+#: ../../source/index.rst:6 e2cdd60be8a54c6cb5c99e89163a3bf3
+msgid "Table of contents:"
+msgstr "Inhaltsverzeichnis:"

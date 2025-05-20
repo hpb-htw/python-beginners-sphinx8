@@ -93,4 +93,4 @@ def gen_pots(c):
     """
     Generate .pot templates from sphinx source files
     """
-    c.run(f'sphinx-build --builder gettext --doctree-dir {DOCTREES_DIR} {SOURCE_DIR} {BUILD_DIR}')
+    c.run(f'sphinx-build --builder gettext {SOURCE_DIR} {POT_DIR}')
