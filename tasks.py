@@ -1,15 +1,13 @@
 from invoke import task
 import os
 
-import http.server as httpserver
-import socketserver
-
 
 BASE_DIR = os.path.realpath(os.path.dirname(__file__))
 BUILD_DIR = os.path.join(BASE_DIR, 'build')
 SOURCE_DIR = os.path.join(BASE_DIR, 'source')
 LOCALE_DIR = os.path.join(SOURCE_DIR, 'locale',
                           '%s', 'LC_MESSAGES')
+DOCTREES_DIR = os.path.join(BUILD_DIR, 'doctrees')
 LANGUAGES = {'en', 'de', 'ru', 'ko', 'es_CL', 'ro'}
 MAIN_TARGET = 'html'
 REPOSITORY = 'git@github.com:OpenTechSchool/python-beginners.git'
@@ -36,9 +34,10 @@ def build(c, language:str=None, target:str=MAIN_TARGET):
     if os.path.isdir(LOCALE_DIR % language):
         compile_pos(c,language)
 
+
     src = SOURCE_DIR
     dest = os.path.join(BUILD_DIR, target, language)
-    arg = f"sphinx-build -b {target} -d {os.path.join(BUILD_DIR, 'doctrees')} -D language={language} {src} {dest}"
+    arg = f"sphinx-build --builder {target} --doctree-dir {DOCTREES_DIR} --define language={language} {src} {dest}"
     c.run(arg)
     if 'html' in target:
         static_files = os.path.join(BASE_DIR, '_static', '*')
@@ -56,25 +55,20 @@ def build_all(c, target:str=MAIN_TARGET):
 @task
 def clean(c, language:str=None, target:str=MAIN_TARGET):
     if language is not None:
-        c.run(f'rm -rfv {os.path.join(BUILD_DIR, target, language)}')
+        arg = f'rm -rfv {os.path.join(BUILD_DIR, target, language)}'
     else:
-        c.run(f'rm -rfv {os.path.join(BUILD_DIR, target)}')
+        arg = f'rm -rfv {os.path.join(BUILD_DIR, target)}'
+    c.run(arg)
 
 @task
-def clean_all(c):
-    c.run(f'rm -rfv {BUILD_DIR}/*')
+def clean_all(c, verbose:bool=False):
+    # TODO: use unix command to remove everything under {build}
+    c.run("make clean")
 
 @task
 def serve(c, port:int=SERVE_PORT, serve_dir:str=None):
     """Run a web server to serve the built project"""
-    if serve_dir is None:
-        serve_dir = os.path.join(BUILD_DIR, MAIN_TARGET)
-    port = int(port)
-    os.chdir(serve_dir)
-    handler = httpserver.SimpleHTTPRequestHandler
-    httpd = socketserver.TCPServer(("", port), handler)
-    print("serving on http://%s:%s" % httpd.server_address)
-    httpd.serve_forever()
+    raise DeprecationWarning("Use `python -m http.server -d build/html' to run a server")
 
 @task
 def update_pos(c, language:str):
@@ -98,6 +92,5 @@ def compile_pos(c, language):
 def gen_pots(c):
     """
     Generate .pot templates from sphinx source files
-    let sphinx Makefile to the job!
     """
-    c.run('make gettext')
+    c.run(f'sphinx-build --builder gettext --doctree-dir {DOCTREES_DIR} {SOURCE_DIR} {BUILD_DIR}')

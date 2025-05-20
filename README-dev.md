@@ -16,16 +16,22 @@ pip install -r requirements.txt
 * To generate POT-file:
 
 ```bash
-make gettext
+invoke gen-pots
 ```
 
-* To update/generated PO-files:
+* To update/generated PO-files from POT-files:
 
 ```bash
-sphinx-intl update -p build/gettext -l de
+invoke update-pos --language=<lang>
 ```
 
-* To update MO-file
+* To compile all MO-files of a language
+
+```bash
+invoke compile-pos --language=<lang>
+```
+
+* To update a single MO-file for debug
 
 ```bash
 msgfmt "conditional_loops.po" -o "locale/de/LC_MESSAGES/conditional_loops.mo"
