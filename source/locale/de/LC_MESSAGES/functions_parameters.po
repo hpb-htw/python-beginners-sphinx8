@@ -1,32 +1,33 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2012–2014, OpenTechSchool and contributors
-# This file is distributed under the same license as the Introduction to
-# Programming with Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# This file is distributed under the same license as the Introduction to Programming with Python package.
 #
-#, fuzzy
+# Translators:
+# Kristian Rother <krother@academis.eu>, 2013
+# Robert Lehmann <transifex@robertlehmann.de>, 2013
+# Benjamin Kampmann <ben@opentechschool.org>, 2013
+# Robert Lehmann <transifex@robertlehmann.de>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python \n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 11:05+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-02-24 19:41+0000\n"
+"Last-Translator: Robert Lehmann <transifex@robertlehmann.de>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/functions_parameters.rst:2 d347b2b2f26f4e9d823131d6d53816da
 msgid "Functions with parameters"
-msgstr ""
+msgstr "Funktionen mit Parametern"
 
 #: ../../source/functions_parameters.rst:5 b93b5fcf99d5478b906f01e1d279a3b1
 msgid "Introduction"
-msgstr ""
+msgstr "Einführung"
 
 #: ../../source/functions_parameters.rst:7 11eaddae373444398db445b331bc541b
 msgid ""
@@ -36,110 +37,110 @@ msgid ""
 "inside the function, so if we want to use a different angle or a distance"
 " then we need to write a new function. Our hexagon function can only draw"
 " one size of hexagon!"
-msgstr ""
+msgstr "Wenn wir unseren Code minimieren und Funktionen hinzufügen um Wiederholungen zu entfernen *faktorisieren* wir ihn. Das ist eine gute Sache. Aber die Funktionen die wir bis jetzt definiert haben sind nicht sehr flexibel. Die Variablen sind innerhalb der Funktionen definiert, falls wir also einen anderen Winkel oder Distanz benutzen wollen müssen wir eine neue Funktion schreiben. Unsere hexagon-Funktion kann nur Hexagone einer Größe zeichnen!"
 
 #: ../../source/functions_parameters.rst:14 3a7f5ecc89594a74a0b5819729d72e4d
 msgid ""
 "That is why we need to be able to give parameters, also called "
 "*arguments*, to the function.  This way the *variables* in the function "
 "can have different values each time we call the function:"
-msgstr ""
+msgstr "Deshalb benötigen wir die Möglichkeit Parameter, auch *Argumente* genannt, an eine Funktion zu übergeben. So können die Variablen innerhalb der Funktion jedes Mal wenn die Funktion aufgerufen wird, andere Werte annehmen:"
 
 #: ../../source/functions_parameters.rst:18 229ed24fd3a3477eab9ebc072104d2b0
 msgid ""
 "Remember how we defined the function ``line_without_moving()`` in the "
 "previous section::"
-msgstr ""
+msgstr "Erinnere Dich wie wir die Funktion ``line_without_moving()`` im vorigen Abschnitt definiert haben::"
 
 #: ../../source/functions_parameters.rst:25 24b3755aaf454eff84044fa0d1cbb564
 msgid "We can improve it by giving it a parameter::"
-msgstr ""
+msgstr "Wir können die Funktion verbessern, indem wir ihr einen Parameter übergeben::"
 
 #: ../../source/functions_parameters.rst:31 1af2335c779c4aceb7e6688536513867
 msgid ""
 "The parameter acts as a *variable* only known inside the function's "
 "definition. We use the newly defined function by calling it with the "
 "value we want the parameter to have like this::"
-msgstr ""
+msgstr "Der Parameter fungiert als *Variable* die nur innerhalb der Funktionsdefinition bekannt ist. Wir verwenden diese neu definierte Funktion, indem wir sie mit dem Wert für den Parameter aufrufen::"
 
 #: ../../source/functions_parameters.rst:38 a9f1033bdf504244ae47c213ae157ec0
 msgid ""
 "We have been using functions with parameters since the beginning of the "
 "tutorial with ``turtle.forward()``, ``turtle.left()``, etc..."
-msgstr ""
+msgstr "Wir haben bereits seit dem Anfang des Tutorials Funktionen mit Parametern verwendet, z.B. ``turtle.forward()``, ``turtle.left()``, etc..."
 
 #: ../../source/functions_parameters.rst:41 88c39431a79d4328a87076585a5bc35b
 msgid ""
 "And we can put as many arguments (or parameters) as we want, separating "
 "them with commas and giving them different names::"
-msgstr ""
+msgstr "Wir können so viele Argumente (oder Parameter) wie wir möchten für eine Funktio definieren. Die einzelnen Argumente sind dabei durch Kommata getrennt und haben alle unterschiedliche Namen::"
 
 #: ../../source/functions_parameters.rst:50 0e14a0289f5e4dfa8401022181e4e839
 msgid "A parameterized function for a variable size hexagon"
-msgstr ""
+msgstr "Eine parametrisierte Funktion für ein Hexagon mit variabler Grösse"
 
 #: ../../source/functions_parameters.rst:53
 #: ../../source/functions_parameters.rst:74 6f0124af32eb415b8e9bcc161f3054bf
 #: aa8cf16d0f314252982dcd32910ae2da
 msgid "Exercise"
-msgstr ""
+msgstr "Übung"
 
 #: ../../source/functions_parameters.rst:55 cedc1938570d4d6c819940f1bfe75e51
 msgid ""
 "Write a function that allows you to draw hexagons of any size you want, "
 "each time you call the function."
-msgstr ""
+msgstr "Schreibe eine Funktion die Dir jedes Mal wenn Du die Funktion aufrufsts, erlaubt Hexagone mit beliebiger Grösse zu zeichnen."
 
 #: ../../source/functions_parameters.rst:61
 #: ../../source/functions_parameters.rst:90 40a4df52104f497a82dfb94289660273
 #: e13f2b5df20242d68023e4c4c413c40a
 msgid "Solution"
-msgstr ""
+msgstr "Lösung"
 
 #: ../../source/functions_parameters.rst:71 a03096b33bea4a9fb9e74ff8126c17f2
 msgid "A function of several parameters"
-msgstr ""
+msgstr "Eine Funktion mit mehreren Parametern"
 
 #: ../../source/functions_parameters.rst:76 4bfbbdf1c42b4cd7b2ea2d310654286e
 msgid ""
 "Write a function that will draw a shape of *any* number of sides (let's "
 "assume greater than two) of any side length. Get it to draw some "
 "different shapes."
-msgstr ""
+msgstr "Schreib eine Funktion die eine Form mit *irgendeiner* Anzahl von Seiten (lass uns annehmen mehr als zwei) von irgendeiner Seitenlänge zeichnet. Lass sie ein paar verschiedene Formen malen."
 
 #: ../../source/functions_parameters.rst:79 4a737f71b46e482582f2538875e6fedb
 msgid "Here's an example of drawing shapes with this function:"
-msgstr ""
+msgstr "Hier ist ein Beispiel wie man Formen mit dieser Funktion malt:"
 
 #: ../../source/functions_parameters.rst:85 97f3874c77c544fda7146bd907212c61
 msgid "The sum of the external angles of any shape is always 360 degrees!"
-msgstr ""
+msgstr "Die Summe der Außenwinkel in jeder Form ist immer 360 Grad!"
 
 #: ../../source/functions_parameters.rst:100 85fde0519dfe4f1dba2bb7c0b51cabe0
 msgid "Bonus"
-msgstr ""
+msgstr "Bonus"
 
 #: ../../source/functions_parameters.rst:102 ed95a0e57dfa49248529b40883a99277
 msgid ""
 "It might sound crazy, but it's perfectly possible to pass a *function* as"
 " a parameter to another function! Python regards functions as perfectly "
 "normal 'things', the same as variables, numbers and strings."
-msgstr ""
+msgstr "Es mag verrückt klingen, aber es ist durchaus möglich eine *Funktion* als Parameter einer anderen Funktion zu übergeben. Python betrachten Funktionen als total normale 'Dinge', genauso wie Variablen, Nummern oder Zeichenketten (Strings)."
 
 #: ../../source/functions_parameters.rst:106 bb584dac7ee94ccaabf3baa1b4799a0f
 msgid ""
 "For instance, you could create a shape drawing function which turned one "
 "way or another depending on which turtle function you passed to it - "
 "``turtle.left`` or ``turtle.right``."
-msgstr ""
+msgstr "Man könnte zum Beispiel eine Funktion zum Zeichnen von Formen schreiben die, abhängig von der turtle-Funktion (``turtle.left oder ``turtle.right``) die man ihr übergibt, die Zeichenrichtung ändert."
 
 #: ../../source/functions_parameters.rst:109 3c763ad2f17a4717b00a8f3373580ba3
 msgid "See if you can implement this!"
-msgstr ""
+msgstr "Schau ob du das implementieren kannst!"
 
 #: ../../source/functions_parameters.rst:113 d5f4528865f04e48af1eb833ad69ab49
 msgid ""
 "Passing a function (e.g ``turtle.left``) is different than *calling* it, "
 "which would instead be written ``turtle.left(45)``."
-msgstr ""
+msgstr "Eine Funktion (bspw. ``turtle.left``) zu übergeben heißt nicht sie aufzurufen, was man als ``turtle.left(45)`` schreiben würde."
 
