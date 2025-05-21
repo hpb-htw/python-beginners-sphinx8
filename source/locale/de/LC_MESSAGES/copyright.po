@@ -1,28 +1,28 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2012–2014, OpenTechSchool and contributors
-# This file is distributed under the same license as the Introduction to
-# Programming with Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# This file is distributed under the same license as the Introduction to Programming with Python package.
 #
-#, fuzzy
+# Translators:
+# Kristian Rother <krother@academis.eu>, 2013
+# Robert Lehmann <transifex@robertlehmann.de>, 2013
+# Benjamin Kampmann <ben@opentechschool.org>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python \n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 11:05+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2015-10-02 06:32+1000\n"
+"PO-Revision-Date: 2015-10-01 20:36+0000\n"
+"Last-Translator: Matthew Iversen <matthew@opentechschool.org>\n"
+"Language-Team: German (http://www.transifex.com/opentechschool/python-for-beginners/language/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/copyright.rst:2 bbdf6aa072d1475ba11fd296bfef2d23
 msgid "License"
-msgstr ""
+msgstr "Lizenz"
 
 #: ../../source/copyright.rst:4 8bbef3f47ed54938a637fa32e9b2d0d1
 msgid ""
@@ -31,7 +31,7 @@ msgid ""
 "http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to "
 "Creative Commons, 444 Castro Street, Suite 900, Mountain View, "
 "California, 94041, USA."
-msgstr ""
+msgstr "Dieses Werk steht unter einer `Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 3.0 Deutschland Lizenz <http://creativecommons.org/licenses/by-sa/3.0/de>`_."
 
 #: ../../source/copyright.rst:10 ../../source/copyright.rst:12
 #: 2b1a022bc5684a4e8794cfd3fe1937d2 61cbadcb009c425f82329bcdc42754ff
@@ -46,15 +46,15 @@ msgstr ""
 msgid ""
 "The following people have contributed to this material, in alphabetical "
 "order:"
-msgstr ""
+msgstr "Die folgenden Personen haben zu diesem Material beigetragen (in alphabetischer Reihenfolge):"
 
 #: ../../source/copyright.rst:29 5065462a77a94fc5bcd4a0d7350e962f
 msgid "(This list is automatically generated from our `source repository`__.)"
-msgstr ""
+msgstr "(Diese Liste wird automatisch aus unserem Quellcode-Repository generiert.)"
 
 #: ../../source/copyright.rst:33 c4344e054d96455c925265c8e2965c74
 msgid "The material is legally maintained by"
-msgstr ""
+msgstr "Das Material wird rechtlich gepflegt von"
 
 #: ../../source/copyright.rst c35db7523c194e66aa768886affabe19
 msgid "OpenTechSchool e.V."
