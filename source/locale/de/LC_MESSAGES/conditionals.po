@@ -1,32 +1,33 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2012–2014, OpenTechSchool and contributors
-# This file is distributed under the same license as the Introduction to
-# Programming with Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# This file is distributed under the same license as the Introduction to Programming with Python package.
 #
-#, fuzzy
+# Translators:
+# Kristian Rother <krother@academis.eu>, 2013
+# Robert Lehmann <transifex@robertlehmann.de>, 2013
+# Benjamin Kampmann <ben@opentechschool.org>, 2013
+# Robert Lehmann <transifex@robertlehmann.de>, 2013-2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python \n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 11:05+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-02-24 18:59+0000\n"
+"Last-Translator: Robert Lehmann <transifex@robertlehmann.de>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/conditionals.rst:2 866db15109bc4fb9843d2ab47366bc25
 msgid "Conditional statements"
-msgstr ""
+msgstr "Verzweigungen"
 
 #: ../../source/conditionals.rst:5 63d304a28194443e88524a10bbeb7d02
 msgid "Introduction"
-msgstr ""
+msgstr "Einführung"
 
 #: ../../source/conditionals.rst:7 2d4358e4f98b46a3b09be9d4a2b77f77
 msgid ""
@@ -37,7 +38,7 @@ msgid ""
 " a value and act in one way if the condition is met by the variable or "
 "another way if not. They are also commonly called by programmers *if "
 "statements*."
-msgstr ""
+msgstr "Bisher haben wir vordefinierte Aufgaben erledigt, aber einmal ehrlich, die Programme waren kaum komplizierter als eine antike Drehorgel die eine vordefinierte Melodie vom Anfang bis zum Ende abspult. Verzweigugen sind das, was Programmieren sehr viel mächtiger macht. Verzweigungen *testen* den Inhalt einer Variablen und verhalten sich einmal so falls die Variable einen bestimmten Wert hat, und anders falls nicht. Programmierer nennen Verzweigungen auch *if Ausdrücke*."
 
 #: ../../source/conditionals.rst:15 5ab2b83800c44b13af975f1271770df3
 msgid ""
@@ -45,50 +46,50 @@ msgid ""
 "the booleans. They allow logical operations. A logic statement or "
 "operation can be evaluated to be *True* or *False*. Our conditional "
 "statement can then be understood like this:"
-msgstr ""
+msgstr "Um zu wissen ob eine Bedingung *True* oder *False* ist, brauchen wir einen neuen Datentyp: Boolean. Booleans erlauben logische Operationen, die entweder als *wahr* oder *falsch* ausgewertet werden. Unsere Verzweigung kann also folgendermassen verstanden werden:"
 
 #: ../../source/conditionals.rst:20 fd2b2e64f5b14fc39bb24d60665f92ee
 msgid "**if** *(a condition evaluates to True)*:"
-msgstr ""
+msgstr "**if** (eine Bedingung die als True ausgewertet wird)*:"
 
 #: ../../source/conditionals.rst:21 10505f5f665b4daabcb65739abb971fc
 msgid "*then do these things only for 'True'*"
-msgstr ""
+msgstr "*dann führe diese Anweisungen nur für 'True' aus*"
 
 #: ../../source/conditionals.rst:22 c886babfd7e9466c91dc861142edf15f
 msgid "**else**:"
-msgstr ""
+msgstr "**else**:"
 
 #: ../../source/conditionals.rst:23 9b30706cbdb24b399330ed462af6edf7
 msgid "*otherwise do these things only for 'False'*."
-msgstr ""
+msgstr "*andernfalls führe diese Anweisungen nur für 'False' aus*."
 
 #: ../../source/conditionals.rst:25 e1359944521c425d95eaf8ad958378c2
 msgid ""
 "The condition can be anything that evaluates as *True* or *False*. "
 "Comparisons always return *True* or *False*, for example ``==`` (equal "
 "to), ``>`` (greater than), ``<`` (less than.)"
-msgstr ""
+msgstr "Eine Bedingung kann alles sein, was zu wahr (*True*) oder falsch (*False*) evaluiert werden kann. Vergleiche ergeben immer wahr oder falsch, zum Beispiel ``==`` (ist gleich), ``>`` (größer als), ``<`` (kleiner als)."
 
 #: ../../source/conditionals.rst:29 1b993202c6384733b82c5a7ecb381852
 msgid ""
 "The **else** part is optional. If you leave it off, nothing will happen "
 "if the conditional evaluates to 'False'."
-msgstr ""
+msgstr "Der **else** Block ist optional. Falls Du ihn auslässt und die Bedingung als 'False' ausgewertet wird, passiert nichts weiter."
 
 #: ../../source/conditionals.rst:34 ea193b359acf422d8564d259a346f335
 msgid "Examples"
-msgstr ""
+msgstr "Beispiele"
 
 #: ../../source/conditionals.rst:36 b80ba0e4b15e4bb39747ae8e91e8d943
 msgid ""
 "Here are some examples. You may want to read them over line-by-line and "
 "see what you think they do, or run them to be certain::"
-msgstr ""
+msgstr "Hier sind einige Beispiele. Du kannst sie Zeile für Zeile lesen und nachdenken was sie tun, oder gleich ausführen um auf Nummer sicher zu gehen."
 
 #: ../../source/conditionals.rst:54 9e9ec61bdb424faf85e440d40dbe1063
 msgid "Giving Directions"
-msgstr ""
+msgstr "Die Richtung festlegen"
 
 #: ../../source/conditionals.rst:56 bbca099892144f5fbb804cc7341421e1
 msgid ""
@@ -96,25 +97,25 @@ msgid ""
 "``input()`` function to ask the user for a direction to move the turtle. "
 "To keep things easy we will only accept two instructions: \"left\" and "
 "\"right\"."
-msgstr ""
+msgstr "Die Schildkröten in Python sind sehr gut darin, Befehle auszuführen. Lass uns die ``input()`` Funktion verwenden, um den Benutzer nach einer Richtung zu fragen, in die die Schildkröte bewegt werden soll. Um es nicht zu kompliziert zu machen, erlauben wir nur zwei Befehle: ''links'' und ''rechts''."
 
 #: ../../source/conditionals.rst:63 c5fb8d8d0c444d558dbc80e310c765d8
 msgid "Using Python 2? The ``input()`` function is called ``raw_input()``."
-msgstr ""
+msgstr "Python 2 verwenden? Die Funktion ``input()`` heisst auch ``raw_input()``."
 
 #: ../../source/conditionals.rst:65 d524690887e54c5fa417eec2701a7fa1
 msgid "It's much easier to define this as a function, like so::"
-msgstr ""
+msgstr "Es ist viel einfacher dies als eine Funktion zu definieren, etwa folgendermassen::"
 
 #: ../../source/conditionals.rst:76 37151b9d4f76410db84f270380d77aeb
 msgid ""
 "Now whenever you use ``move()`` you are prompted to choose ``left`` or "
 "``right``."
-msgstr ""
+msgstr "Immer wenn Du nun ``move()`` verwendest, wirst Du gefragt entweder ``links`` oder ``rechts`` auszuwählen."
 
 #: ../../source/conditionals.rst:81 2ee92a3f7d764baaa99e9312a4efae0c
 msgid "\"data munging\""
-msgstr ""
+msgstr "„Datenbastelei“"
 
 #: ../../source/conditionals.rst:83 53e52e5345af400cb7e54c8a8bea8d18
 msgid ""
@@ -124,24 +125,24 @@ msgid ""
 " has a few utility methods to help with that. A string has the methods "
 "``.strip()``, which removes whitespace and ``.lower()`` which makes "
 "everything lower-case."
-msgstr ""
+msgstr "In diesem Programm wird die Schildkröte nur auf die Befehle ``links`` und ``rechts`` reagieren, ohne jegliche Abweichungen. Obwohl ``Links`` oder ``LINKS`` für einen Menschen das gleiche bedeutet wie ``links``, ist das für ein Programm nicht der Fall. Python hat einige Hilfsmethoden die dabei helfen. Ein String hat die Methoden ``.strip()``, die Leerzeichen und Zeilenumbrüche von den Enden entfernt, und ``.lower()``, welche den gesamten String in Kleinbuchstaben umwandelt."
 
 #: ../../source/conditionals.rst:90 584e6bd30d864d50a8dfae035d3e3987
 msgid ""
 "Here are some examples to print out the effects of ``.strip()`` and "
 "``.lower()``::"
-msgstr ""
+msgstr "Here sind einige Beispiele, die die Auswirkungen von ``.strip()`` und ``.lower()`` illustrieren::"
 
 #: ../../source/conditionals.rst:99 97c0ca0ca1c449e49bffd9470f6bd657
 msgid ""
 "Try adding ``direction = direction.strip().lower()`` to the ``move()`` "
 "function, to see the effect. We often call this kind of code \"data "
 "munging\", and it is very common."
-msgstr ""
+msgstr "Versuche den Befehl ``direction = direction.strip().lower()`` zu der Funktion ``move()`` hinzuzufügen. Beobachte die Auswirkungen. Diese Art von Code wird von uns ''data munging'' (Datenbastelei) genannt. Sie ist sehr häufig."
 
 #: ../../source/conditionals.rst:103 c3ebf2fa25e04f1bbe2bcd68abeb37a8
 msgid ""
 "Can you add some extra input choices to make the turtle draw other "
 "things? How about ``hexagon``?"
-msgstr ""
+msgstr "Kannst Du einig zusätzliche Eingabeoptionen hinzufügen, die die Schildkröte andere Dinge zeichnen lassen? Wie wäre es mit einem ''Sechseck'' (``hexagon``)?"
 
