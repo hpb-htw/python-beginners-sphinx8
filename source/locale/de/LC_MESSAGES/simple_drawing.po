@@ -1,38 +1,39 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2012–2014, OpenTechSchool and contributors
-# This file is distributed under the same license as the Introduction to
-# Programming with Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# This file is distributed under the same license as the Introduction to Programming with Python package.
 #
-#, fuzzy
+# Translators:
+# Kristian Rother <krother@academis.eu>, 2013
+# Robert Lehmann <transifex@robertlehmann.de>, 2013
+# Benjamin Kampmann <ben@opentechschool.org>, 2013
+# Robert Lehmann <transifex@robertlehmann.de>, 2013-2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python \n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 11:05+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-02-25 06:43+0000\n"
+"Last-Translator: Robert Lehmann <transifex@robertlehmann.de>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/simple_drawing.rst:2 9c2a818d2d1e415dbc16a476b08b6ed2
 msgid "Simple drawing with turtle"
-msgstr ""
+msgstr "Einfaches Zeichnen mit turtle"
 
 #: ../../source/simple_drawing.rst:5 439cc57632a641669b840ed51020cc2b
 msgid "Introduction"
-msgstr ""
+msgstr "Einführung"
 
 #: ../../source/simple_drawing.rst:7 400870f198ae4221b644d31f005f51f1
 msgid ""
 "\"Turtle\" is a python feature like a drawing board, which lets you "
 "command a turtle to draw all over it!"
-msgstr ""
+msgstr "Das Modul besitzt Funktionen wie ``turtle.forward(...)`` und ``turtle.left(...)`` welche die Schildkröte umher bewegen."
 
 #: ../../source/simple_drawing.rst:10 31eecc1b1e9b43fc8c4ddb4d079d8337
 msgid ""
@@ -46,21 +47,21 @@ msgid ""
 "around with it in the interactive interpreter first, as there is an extra"
 " bit of work required to make it work from files. Just go to your "
 "terminal and type::"
-msgstr ""
+msgstr "Bevor du turtle benutzen kannst musst du es importieren. Wir empfehlen erstmal mit ihr in einem interaktiven Interpreter herumzuexperimentieren, da ein bisschen zusätzliche Arbeit notwendig ist um aus Dateien zu arbeiten.  Gehe in deine Konsole und tippe:"
 
 #: ../../source/simple_drawing.rst:23 bd533e16040f4c2ba8237e1956217b22
 msgid ""
 "Not seeing anything on Mac OS?  Try issuing a command like "
 "``turtle.forward(0)`` and looking if a new window opened behind your "
 "command line."
-msgstr ""
+msgstr "Du siehst nichts unter Mac OS? Probier einen Befehl wie ``turtle.forward(0)`` zu erteilen und zu schauen, ob sich ein neues Fenster hinter deiner Kommandozeile geöffnet hat."
 
 #: ../../source/simple_drawing.rst:29 7e5f59927d0246f3a7fd49e5b2d53ee0
 msgid ""
 "Do you work with Ubuntu and get the error message \"No module named "
 "_tkinter\"? Install the missing package with ``sudo apt-get install "
 "python3-tk``"
-msgstr ""
+msgstr "Arbeitest du mit Ubuntu und hast die Fehlermeldung \"No module named _tkiner\" bekommen? Installier das fehlende Paket mit ``sudo apt-get install python3-tk``"
 
 #: ../../source/simple_drawing.rst:35 08310b96c3ef4a2385b1def65aedee98
 msgid ""
@@ -68,7 +69,7 @@ msgid ""
 "page into your terminal, we encourage you to type out each command. "
 "Typing gets the syntax under your fingers (building that muscle memory!) "
 "and can even help avoid strange syntax errors."
-msgstr ""
+msgstr "Auch wenn es verlockend ist einfach alles auf dieser Seite in dein Terminal zu kopieren würden wir dich ermutigen, alle Befehle selbst zu tippen. Tippen bringt die Syntax in deine Finger (um das Muskelgedächtnis aufzubauen!) und kann sogar helfen komische Syntaxfehler zu vermeiden."
 
 #: ../../source/simple_drawing.rst:53 9f918d7819e240529450fb4943640661
 msgid ""
@@ -76,24 +77,24 @@ msgid ""
 "the given distance. ``turtle.left(...)`` takes a number of degrees which "
 "you want to rotate to the left. There is also ``turtle.backward(...)`` "
 "and ``turtle.right(...)``, too."
-msgstr ""
+msgstr "Die Funktion ``turtle.forward(...)`` weist die Schildkröte an, sich eine gewisse Distanz vorwärts zu bewegen.  ``turtle.left(...)`` erwartet einen Winkel, den du nach links drehen willst. Es gibt außerdem noch ``turtle.backward(...)`` und ``turtle.right(...)``."
 
 #: ../../source/simple_drawing.rst:59 d79bcfd8335f49adb6af3eaea9240493
 msgid ""
 "Want to start fresh? You can type ``turtle.reset()`` to clear the drawing"
 " that your ``turtle`` has made so far. We'll go into more detail on "
 "``turtle.reset()`` in just a bit."
-msgstr ""
+msgstr "Du willst neu anfangen? Du kannst ``turtle.reset()`` eintippen um die Zeichnungen, die deine ``turtle`` bisher gemacht hat, zu löschen. Wir werden ``turtle.reset()`` gleich detaillierter beleuchten."
 
 #: ../../source/simple_drawing.rst:63 ede984056c1d45fcad3495defbc9c350
 msgid ""
 "The standard turtle is just a triangle. That's no fun! Let's make it a "
 "turtle instead with the ``turtle.shape()`` command::"
-msgstr ""
+msgstr "Standardmässig wird die Schildkröte auf dem Bildschirm als Dreieck dargestellt. Wie langweilig! Lass uns mit der Funktion ``turtle.shape()`` eine richtige Schildkröte daraus machen::"
 
 #: ../../source/simple_drawing.rst:68 88a6f956bebc45d780f507616358b3ef
 msgid "So much cuter!"
-msgstr ""
+msgstr "Das ist doch viel niedlicher!"
 
 #: ../../source/simple_drawing.rst:70 6c4b607ea1914c6c8a7b3f6995a38d90
 msgid ""
@@ -103,7 +104,7 @@ msgid ""
 "turtle window belongs to Python, it goes away as well.)  To prevent that,"
 " just put ``turtle.exitonclick()`` at the bottom of your file.  Now the "
 "window stays open until you click on it::"
-msgstr ""
+msgstr "Wenn Du die Befehle in eine Datei geschrieben hast, hast Du vielleicht bemerkt, dass das turtle-Fenster verschwindet, nachdem die Schildkröte ihre Bewegung vollendet hatte. (Das geschieht weil Python beendet wird, sobald der letzte Befehl ausgeführt wurde. Und da das turtle-Fenster mit zu Python gehört, wird es auch geschlossen.) Um das zu verhindern, füge am Ende Deines Programms ``turle.exitonclick()`` hinzu. Jetzt bleibt das Fenster offen bis Du noch einmal darauf klickst::"
 
 #: ../../source/simple_drawing.rst:87 48322b2223b14547b56bc1ec9f052962
 msgid ""
@@ -112,11 +113,11 @@ msgid ""
 "but for now just keep in mind that stray spaces or tabs before any line "
 "of Python code can cause an unexpected error. You could even try adding "
 "one to check how python will complain!"
-msgstr ""
+msgstr "Python ist eine Programmiersprache in der horizontale Einrückung des Textes wichtig ist. Wir werden alles darüber später im Kapitel \"Funktionen\" lernen, behalte bis dahin im Kopf das herumirrende Leerzeichen oder Tabs vor einer Zeile Pythoncode einen unvorhergesehenen Fehler auslösen können."
 
 #: ../../source/simple_drawing.rst:94 6f2259b7f1d7403aa3be4b6342a94b92
 msgid "Drawing a square"
-msgstr ""
+msgstr "Ein Rechteck zeichnen"
 
 #: ../../source/simple_drawing.rst:98 c66ff54e1f2448a69a38f026b9a26944
 msgid ""
@@ -126,27 +127,27 @@ msgid ""
 "what gives errors. If you want to keep playing with something you learned"
 " that creates interesting results, that's OK too. Don't hesitate to try "
 "and fail and learn from it!"
-msgstr ""
+msgstr "Niemand erwartet von Dir, dass Du sofort auf die Antwort kommst. Lerne durch Ausprobieren! Experimentiere damit was Python tut wenn Du verschiedene Befehle erteilst, was zu schönen (wenn auch manchmal unerwarteten) Ergebnissen führt, und was Fehler verursacht. Wenn Du etwas findest dass für Dich interessante Ergebnisse erzeugt und Du weiter damit herumprobieren möchtest, ist das auch in Ordnung. Zögere nicht etwas zu versuchen, und daraus zu lernen falls es schief geht!"
 
 #: ../../source/simple_drawing.rst:107 ../../source/simple_drawing.rst:188
 #: ../../source/simple_drawing.rst:221 2eeb825dd2674b6898be8fc1315571cc
 #: 5fd276b0d72b4eebaa7e5968ba323563 c2b19534ffc34b0cadf9b372440feb3a
 msgid "Exercise"
-msgstr ""
+msgstr "Übung"
 
 #: ../../source/simple_drawing.rst:109 ed310cd6807d4ccbb3155ffb646d3721
 msgid "Draw a square as in the following picture:"
-msgstr ""
+msgstr "Zeichne ein Quadrat so wie im folgenden Bild:"
 
 #: ../../source/simple_drawing.rst:113 1d89c2a47ae646c6ae0ea22d1fa8bef3
 msgid "For a square you will probably need a right angle, which is 90 degrees."
-msgstr ""
+msgstr "Für ein Viereck brauchst du vermutlich einen rechten Winkel, welcher 90˚ beträgt."
 
 #: ../../source/simple_drawing.rst:118 ../../source/simple_drawing.rst:197
 #: ../../source/simple_drawing.rst:234 12058280f968461a9b42f6516d8e3789
 #: 4249ea8b55de48eeb134bd7f28edd892 d38b6229a4204b279e4211bfaeb2f799
 msgid "Solution"
-msgstr ""
+msgstr "Lösung"
 
 #: ../../source/simple_drawing.rst:133 8f5d119d24cc4624b2b731d94af9edbe
 msgid ""
@@ -154,12 +155,12 @@ msgid ""
 "the same direction, before and after drawing the square. This is a useful"
 " convention to follow, it makes it easier to draw multiple shapes later "
 "on."
-msgstr ""
+msgstr "Beachte wie die Schildkröte an der gleichen Stelle in der gleichen Richtung startet und nach Zeichnen des Quadrats stoppt. Dies ist als Konvention nützlich, denn es erleichtert das Zeichnen von mehreren geometrischen Formen hintereinander."
 
 #: ../../source/simple_drawing.rst:139 ../../source/simple_drawing.rst:211
 #: 42bd64ffff644cc7af23610b94e3610a aa8a0fcaa0704801b56ed8513a999a25
 msgid "Bonus"
-msgstr ""
+msgstr "Bonus"
 
 #: ../../source/simple_drawing.rst:141 4b792f5838cf4ca3b4af920e93fe44f6
 msgid ""
@@ -171,31 +172,31 @@ msgid ""
 "into the Python shell. If there is a lot of text, Python will put the "
 "help text into a *pager*, which lets you page up and down. Press the "
 ":kbd:`q` key to exit the pager."
-msgstr ""
+msgstr "Falls Du kreativ werden möchtest, kannst Du die geometrische Form mit den Funktionen ``turtle.width(...)`` und ``turtle.color(...)`` verändern. Wie kannst Du diese Funktionen verwenden? Bevor Du eine Funktion benutzen kannst, musst Du ihre *Signatur* (zum Beispiel die Anzahl und Bedeutung ihrer Parameter). Um das herauszufinden kannst Du in der interaktiven Python Shell ``help(turtle.color)`` eingeben. Falls sich dort eine grosse Menge Text befindet, schreibt Python den Hilfetext in einen *Pager*, in welchem Du auf- und abscrollen kannst. Drücke die Taste :kbd:`q` um den Pager wieder zu verlassen."
 
 #: ../../source/simple_drawing.rst:152 9ea1a40aafc54b9eb1efa704f2d37f1f
 msgid "Are you seeing an error like this::"
-msgstr ""
+msgstr "Siehst du ungefähr folgenden Fehler::"
 
 #: ../../source/simple_drawing.rst:156 769376d4cf174bba9863fd5bf2edcaba
 msgid ""
 "when trying to view help? In Python you have to import names before you "
 "can refer to them, so in a new Python interactive shell you'll need to "
 "``import turtle`` before ``help(turtle.color)`` will work."
-msgstr ""
+msgstr "In Python musst Du Namen von Modulen oder Funktionen importieren bevor Du sie verwenden kannst. Also musst Du in einem neuen Python-Shell Fenster zuerst ``import turtle`` schreiben, bevor ``help(turtle.color)`` funktioniert."
 
 #: ../../source/simple_drawing.rst:160 4478c4ebe8e14ab9a1b0665202d8fa4d
 msgid ""
 "Another way to find out about functions is to browse the `online "
 "documentation`_."
-msgstr ""
+msgstr "Ein anderer Weg die Funktionen herauszufinden ist die `online documentation`_."
 
 #: ../../source/simple_drawing.rst:167 a615af259ceb420c86cae2b126b83885
 msgid ""
 "If you misdrew anything, you can tell turtle to erase its drawing board "
 "with the ``turtle.reset()`` directive, or undo the most recent step with "
 "``turtle.undo()``."
-msgstr ""
+msgstr "Falls Du etwas falsch gezeichnet hast, kannst Du turtle befehlen, die Zeichenfläche mit dem ``turtle.reset()`` Befehl vollständig zu löschen oder den letzten Befehl mit ``turtle.undo()`` Rückgängig zu machen."
 
 #: ../../source/simple_drawing.rst:173 ade855d3d53d461eb543f87bcef9d6f3
 #, python-brace-format
@@ -204,7 +205,7 @@ msgid ""
 ":samp:`turtle.color({colorstring})`.  These include but are not limited "
 "to \"red,\" \"green,\" and \"violet.\"  See this `colours manual`_ for an"
 " extensive list."
-msgstr ""
+msgstr "Wie du vielleicht in der Hilfe gelesen hast, kannst du die Farbe mit :samp:`turtle.color({colorstring})` ändern. Das könnte unter Anderem \"red\", \"green\" oder \"violet\" sein. Schau in das `colours manual`_ für eine ausführliche Liste."
 
 #: ../../source/simple_drawing.rst:178 67b342be4a724467bfd705f6bd9011fd
 msgid ""
@@ -215,31 +216,31 @@ msgstr ""
 
 #: ../../source/simple_drawing.rst:185 f263b094d7484e5aaaf59c7606d644b3
 msgid "Drawing a rectangle"
-msgstr ""
+msgstr "Ein Rechteck zeichnen"
 
 #: ../../source/simple_drawing.rst:190 328609c1bab34129a0e84df66ea2e0f7
 msgid "Can you draw a rectangle too?"
-msgstr ""
+msgstr "Kannst du auch ein Rechteck zeichenn?"
 
 #: ../../source/simple_drawing.rst:213 5c24568dfca640ba8a608b9e3afe19cd
 msgid ""
 "How about a triangle? In an equilateral triangle (a triangle with all "
 "sides of equal length) each corner has an angle of 60 degrees."
-msgstr ""
+msgstr "Wie wäre es mit einem Dreieck? In einem gleichseitigen Dreieck (alle Seiten haben die gleiche Länge) hat jede Ecke einen Winkel von 60 Grad."
 
 #: ../../source/simple_drawing.rst:218 183049be2dc34dccb0561c080034590c
 msgid "More squares"
-msgstr ""
+msgstr "Mehr Quadrate"
 
 #: ../../source/simple_drawing.rst:223 56ebd0440700423eb94557767ff36ea5
 msgid ""
 "Now, draw a tilted square. And another one, and another one. You can "
 "experiment with the angles between the individual squares."
-msgstr ""
+msgstr "Jetzt zeichne ein schräg zur Seite gekipptes Quadrat. Und noch eins, und noch eins. Experimentiere mit den Winkeln zwischen den einzelnen Quadraten."
 
 #: ../../source/simple_drawing.rst:228 26c56831fda14b479b386bb2deb6d953
 msgid ""
 "The picture shows three 20 degree turns. But you could try 20, 30 and 40 "
 "degree turns, for example."
-msgstr ""
+msgstr "Das Bild zeigt drei Drehungen um jeweils 20 Grad. Du kannst zum Beispiel auch 20, 30 oder 40 Grad ausprobieren."
 
