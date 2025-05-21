@@ -10,8 +10,8 @@ We may want to take the opposite of our result. Or for instance if we want to
 make a decision upon ``turtle.xcor()`` and ``turtle.ycor()`` we have to combine
 them. This can be done with logical operators. 
 
-Negation of a statement
-=======================
+Negation of an expression
+=========================
 
 If we want something to be *False* we can use ``not``. It is a logical
 operator::
