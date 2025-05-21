@@ -1,32 +1,33 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2012–2014, OpenTechSchool and contributors
-# This file is distributed under the same license as the Introduction to
-# Programming with Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# This file is distributed under the same license as the Introduction to Programming with Python package.
 #
-#, fuzzy
+# Translators:
+# Kristian Rother <krother@academis.eu>, 2013
+# Robert Lehmann <transifex@robertlehmann.de>, 2013
+# Benjamin Kampmann <ben@opentechschool.org>, 2013
+# Robert Lehmann <transifex@robertlehmann.de>, 2013-2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Introduction to Programming with Python \n"
+"Project-Id-Version: Python for beginners\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-19 11:05+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2014-06-09 11:00+1000\n"
+"PO-Revision-Date: 2014-02-24 18:59+0000\n"
+"Last-Translator: Robert Lehmann <transifex@robertlehmann.de>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/python-for-beginners/language/de/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/functions.rst:2 f00f1ba372f044d6ab7b2cdb2a88edc4
 msgid "User-defined functions"
-msgstr ""
+msgstr "Benutzerdefinierte Funktionen"
 
 #: ../../source/functions.rst:5 79e8a9d699f94094832f81f01abf010a
 msgid "Introduction"
-msgstr ""
+msgstr "Einführung"
 
 #: ../../source/functions.rst:7 ba822304930242409faf5074dca9be51
 msgid ""
@@ -35,7 +36,7 @@ msgid ""
 "deal with one thing at a time. So you need a way to break up problems "
 "into smaller, discrete pieces, which lets you focus on just the piece you"
 " want to."
-msgstr ""
+msgstr "Programmierer können mit einigen ganz schön komplexen und abstrakten Probleme umgehen, aber ein Zug von guten Programmierern ist, dass sie faul sind. Sie wollen nur mit einer Sache gleichzeitig umgehen müssen. Also brauchst du einen Weg um Probleme in kleinere, abgesonderte Teile zu zerlegen, damit du dich auf nur einen Teil konzentrieren kannst. "
 
 #: ../../source/functions.rst:12 3493271b24944a43a3840586949dfd3d
 msgid ""
@@ -43,50 +44,50 @@ msgid ""
 "``turtle.reset()`` for example. ``reset`` is a function we call on our "
 "``turtle``, and it is actually an abstraction for a number of steps, "
 "namely:"
-msgstr ""
+msgstr "Funktionen sind ein Weg um diese Abstraktion in Python abzubilden. Lass uns ``turtle.reset()`` betrachten. ``reset`` ist eine Funktion die wir auf unserer ``turtle`` aufrufen und es ist eigentlich eine Abstraktion für eine Vielzahl von Schritten, und zwar:"
 
 #: ../../source/functions.rst:16 0f0f6bad39654df8a7d462dc336d2e59
 msgid "Erase the drawing board."
-msgstr ""
+msgstr "Lösche die Zeichenfläche."
 
 #: ../../source/functions.rst:17 89bf354bd1c949a5b7fff0df3698bed7
 msgid "Set the width and color back to default."
-msgstr ""
+msgstr "Setze die Linienbreite und -Farbe zurück zu den Startwerten."
 
 #: ../../source/functions.rst:18 00d0e83e955d41d89a14f3be58ed9bef
 msgid "Move the turtle back to its initial position."
-msgstr ""
+msgstr "Bewege die Schildkröte in ihre Ausgangsposition zurück."
 
 #: ../../source/functions.rst:20 d03c2cb06f3d4f13949a42d1897a9656
 msgid ""
 "But because all the code is contained in the function, we don't have to "
 "worry about these details. We can simply *call* this function, and know "
 "it will do what it says for us."
-msgstr ""
+msgstr "Aber weil all dieser Quelltext in der Funktion enthalten ist müssen wir uns keine Sorgen über die Details machen. Wir können die Funktion einfach *ausführen* und wissen, was sie für uns tun wird."
 
 #: ../../source/functions.rst:23 f112d95b3325444db19f18a26447d52d
 msgid "So - how to write your own?"
-msgstr ""
+msgstr "Also - wie schreiben wir unsere eigene?"
 
 #: ../../source/functions.rst:25 5c45d77c507741cab7c742c73d1a4b44
 msgid "A function can be defined with the ``def`` keyword in Python::"
-msgstr ""
+msgstr "Eine Funktion kann in Python mit dem Schlüsselwort ``def`` definiert werden::"
 
 #: ../../source/functions.rst:31 ddadcd0b4c96452799b1ad59644661f4
 msgid ""
 "This function we defined is called ``line_without_moving`` and it is an "
 "abstraction for two turtle steps - a move forward and a move backward."
-msgstr ""
+msgstr "Diese von uns definierte Funktion heisst ``line_without_moving``. Sie ist eine Abstraktion für zwei Bewegungen der Schildkröte - ein Schritt vorwärts und ein Schritt rückwärts."
 
 #: ../../source/functions.rst:35 219eeed10220427c816570b152ee9026
 msgid ""
 "To use it (or as it is usually called, \"to call it\"), write its name "
 "followed by parentheses::"
-msgstr ""
+msgstr "Um sie zu benutzen (oder wie es häufig genannt wird, \"sie aufzurufen\"), schreib ihren Namen gefolgt von runden Klammern::"
 
 #: ../../source/functions.rst:46 aa0547571a0944248c11ea8595b3198f
 msgid "We could write more functions to remove some of the repetition::"
-msgstr ""
+msgstr "Wir könnten mehr Funktionen implementieren, um einige der Wiederholungen loszuwerden::"
 
 #: ../../source/functions.rst:57 7729f0bdc2964308bf114ebe73e995bf
 msgid ""
@@ -95,14 +96,14 @@ msgid ""
 "above) is introduced with a colon at the end of the line and subsequent "
 "commands are indented --- usually 4 spaces further in. The block ends "
 "with the first line that isn't indented."
-msgstr ""
+msgstr "Python benutzt *Einrückung mit Leerzeichen* um zusammengehörende Codeabschnitte zu kennzeichnen.  Ein Block (wie die obige Funktion) wird in Python mit einem Doppelpunkt am Ende der Zeile und Einrückung der folgenden Zeilen --- üblicherweise vier Leerzeichen --- gekennzeichnet.  Der Block endet sobald die Zeilen nicht mehr eingerückt sind."
 
 #: ../../source/functions.rst:63 73d2c06273cc49f99d0e18853c75c59b
 #, python-brace-format
 msgid ""
 "This is different to many other programming languages, which use special "
 "characters (like curly braces ``{}``) to group blocks of code together."
-msgstr ""
+msgstr "Das ist ein Unterschied zu vielen anderen Programmiersprachen, die Sonderzeichen (etwa geschweifte Klammern ``{}``) verwenden um Codeblöcke zu kennzeichnen."
 
 #: ../../source/functions.rst:67 b4c740687a9a45f6b94ce7821b54d8d2
 msgid ""
@@ -112,53 +113,53 @@ msgid ""
 "programmers use spaces, and if both are used in the same file python will"
 " read it wrong (in the best place, it will complain, and in the worst "
 "case, weird, hard to debug bugs will happen)."
-msgstr ""
+msgstr "Verwende niemals Tabulatoren um Codeblöcke einzurücken, nur Leerzeichen. Du kannst -- und solltest -- Deinen Editor so konfigurieren, dass er vier Leerzeichen einsetzt sobald Du die Tab-Taste drückst. Das Problem mit den Tabulatoren ist, dass andere Programmierer Leerzeichen verwenden, und falls beide in der gleichen Python-Datei verwendet werden, wird Python sie fehlerhaft interpretieren. Im besten Fall gibt es eine Fehlermeldung und im schlimmsten Fall tauchen undurchsichtige schwer zu findende Fehler auf."
 
 #: ../../source/functions.rst:76 1b63343c91324173826cd5d1b7084cb1
 msgid "A function for a square"
-msgstr ""
+msgstr "Eine Funktion für ein Viereck"
 
 #: ../../source/functions.rst:79 ../../source/functions.rst:120
 #: 48acb190e8ce4118889765ce4253f59a ee5285fdb8394058a0bd786eb36f0d46
 msgid "Exercise"
-msgstr ""
+msgstr "Übung"
 
 #: ../../source/functions.rst:81 4edb0b595a024caea78d170da86cf455
 msgid ""
 "Write a function that draws a square. Could you use this function to "
 "improve the tilted squares program? If you change the program to use a "
 "function, is it easier to experiment with?"
-msgstr ""
+msgstr "Schreibe eine Funktion die ein Viereck zeichnet.  Kannst du diese Funktion benutzen um das Programm mit den gekippten Vierecken zu verbessern?  Lässt es sich leichter mit dem Programm experimentieren wenn du Funktionen benutzt?"
 
 #: ../../source/functions.rst:88 ../../source/functions.rst:142
 #: 5997e7552800456b8526230af8c48103 dd6a3ef0a0354c9691e6fa7c64a1ef9b
 msgid "Solution"
-msgstr ""
+msgstr "Lösung"
 
 #: ../../source/functions.rst:117 8336f1442df04745be9e0238c5b9b986
 msgid "A function for a hexagon"
-msgstr ""
+msgstr "Eine Funktion für ein Hexagon"
 
 #: ../../source/functions.rst:122 ee298487754648839d2d9af4da200718
 msgid "Write a function that draws a hexagon."
-msgstr ""
+msgstr "Schreibe eine Funktion die ein Hexagon zeichnet."
 
 #: ../../source/functions.rst:126 e71c59ab829d4a5cb314a30e74da0191
 msgid ""
 "Now combine that function into a honeycomb. Just make it with a single "
 "layer like this:"
-msgstr ""
+msgstr "Jetzt kombiniere diese Funktion zu einer Honigwabe. Zeichne erst einmal nur eine einzige Ebene, ungefähr so:"
 
 #: ../../source/functions.rst:130 d1892d12809f40cb923e62e1c24cfc34
 msgid "Give it a good go!"
-msgstr ""
+msgstr "Probier es selbst!"
 
 #: ../../source/functions.rst:134 f393b2b309884d9098582d0f83921626
 msgid ""
 "Make sure your hexagon function returns your turtle to exactly the same "
 "position and angle it was before it was asked to draw the hexagon. This "
 "makes it easier to reason about."
-msgstr ""
+msgstr "Stell sicher das deine Hexagonfunktion die Schildkröte zu exakt derselben Position und Ausrichtung zurückkehren lässt bevor es das Hexagon gemalt hat. Das macht es einfacher darüber nachzudenken."
 
 #: ../../source/functions.rst:156 fb476ae46e864244a200a61455c33b97
 msgid ""
@@ -168,5 +169,5 @@ msgid ""
 "to a position where another hexagon would make sense in order to draw a "
 "honeycomb.  If you ever wanted to reuse your hexagon function outside of "
 "honeycombs, that would be confusing."
-msgstr ""
+msgstr "Du könntest auch die Befehle ``turtle.forward(100); turtle.right(60)`` in die Funktion stellen, aber in diesem Fall solltest Du die Funktion besser nicht ``hexagon`` nennen. Das wäre irreführend, da die Funktion dann nicht nur ein Sechseck zeichnen, sondern auch zur Position der nächsten Wabe vorrücken würde. Fall Du später die Funktion hexgon ausserhalb des Wabenprogramms verwenden möchtest wäre diese Namensgebung verwirrend."
 
