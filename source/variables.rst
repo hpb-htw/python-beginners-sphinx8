@@ -48,30 +48,28 @@ Exercise
 If we have a variable called ``angle``, how could we use that to experiment
 much faster with our tilted squares program?
 
-.. rst-class:: solution
+.. admonition:: Solution
+   :collapsible: closed
 
-Solution
---------
+    .. code-block:: python
 
-::
+        angle = 20
 
-    angle = 20
+        turtle.left(angle)
 
-    turtle.left(angle)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
 
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-
-    turtle.left(angle)
+        turtle.left(angle)
 
 
-... and so on
+    ... and so on
 
 Bonus
 -----

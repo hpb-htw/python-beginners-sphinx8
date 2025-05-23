@@ -78,18 +78,16 @@ use ``turtle.pendown()``.
 
 .. image:: /images/dashed.png
 
-.. rst-class:: solution
+.. admonition:: Solution
+   :collapsible: closed
 
-Solution
---------
+    .. code-block:: python
 
-::
-
-    for i in range(10):
-        turtle.forward(15)
-        turtle.penup()
-        turtle.forward(5)
-        turtle.pendown()
+        for i in range(10):
+            turtle.forward(15)
+            turtle.penup()
+            turtle.forward(5)
+            turtle.pendown()
 
 Bonus
 -----
@@ -132,16 +130,14 @@ The squares we were drawing at the start of this tutorial had a lot of
 repeated lines of code. Can you write out a square drawing program in fewer 
 lines by utilizing loops?
 
-.. rst-class:: solution
+.. admonition:: Solution
+   :collapsible: closed
 
-Solution
---------
+    .. code-block:: python
 
-::
-
-    for _ in range(4):
-        turtle.forward(100)
-        turtle.left(90)
+        for _ in range(4):
+            turtle.forward(100)
+            turtle.left(90)
 
 Bonus
 -----

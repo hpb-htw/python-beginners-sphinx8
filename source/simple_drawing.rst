@@ -112,21 +112,19 @@ Draw a square as in the following picture:
 
 For a square you will probably need a right angle, which is 90 degrees.
 
-.. rst-class:: solution
+.. admonition:: Solution
+    :collapsible: closed
 
-Solution
---------
+    .. code-block:: python
 
-::
-
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
 
 .. note::
 
@@ -191,21 +189,19 @@ Can you draw a rectangle too?
 
 .. image:: /images/rectangle.png
 
-.. rst-class:: solution
+.. admonition:: Solution
+   :collapsible: closed
 
-Solution
---------
+    .. code-block:: python
 
-::
-
-    turtle.forward(100)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(100)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
+        turtle.forward(100)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(100)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
 
 Bonus
 -----
@@ -228,43 +224,41 @@ experiment with the angles between the individual squares.
 The picture shows three 20 degree turns. But you could try 20, 30 and 40 degree
 turns, for example.
 
-.. rst-class:: solution
+.. admonition:: Solution
+   :collapsible: closed
 
-Solution
---------
+    .. code-block:: python
 
-::
+        turtle.left(20)
 
-    turtle.left(20)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
 
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
+        turtle.left(30)
 
-    turtle.left(30)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
 
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
+        turtle.left(40)
 
-    turtle.left(40)
-
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(50)
-    turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.left(90)
 

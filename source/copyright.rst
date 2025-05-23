@@ -3,7 +3,7 @@ License
 
 This work is licensed under the Creative Commons Attribution-ShareAlike
 3.0 Unported License. To view a copy of this license, visit
-http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+`<http://creativecommons.org/licenses/by-sa/3.0/>`__ or send a letter to
 Creative Commons, 444 Castro Street, Suite 900, Mountain View,
 California, 94041, USA.
 
@@ -26,9 +26,9 @@ The following people have contributed to this material, in alphabetical order:
 
    }
 
-(This list is automatically generated from our `source repository`__.)
+(This list is automatically generated from our `source repository`_.)
 
-__ https://github.com/opentechschool/python-beginners
+.. _source repository: https://github.com/opentechschool/python-beginners
 
 The material is legally maintained by
 

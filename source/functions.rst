@@ -54,6 +54,8 @@ We could write more functions to remove some of the repetition::
 
 .. important::
 
+   .. move this important box to chapter loops.rst
+
    Python uses *indenting with whitespace* to identify blocks of code
    that belong together. In Python a block (like the function
    definitions shown above) is introduced with a colon at the end of the
@@ -82,36 +84,34 @@ Write a function that draws a square. Could you use this function to improve the
 tilted squares program? If you change the program to use a function, is it easier
 to experiment with?
 
-.. rst-class:: solution
+.. admonition:: Solution
+   :collapsible: closed
 
-Solution
---------
+    .. code-block:: python
 
-::
+        def tilted_square():
+          turtle.left(20)     # now we can change the angle only here
+          for _ in range(4):
+              turtle.forward(50)
+              turtle.left(90)
 
-    def tilted_square():
-      turtle.left(20)     # now we can change the angle only here
-      for _ in range(4):
-          turtle.forward(50)
-          turtle.left(90)
+        tilted_square()
+        tilted_square()
+        tilted_square()
 
-    tilted_square()
-    tilted_square()
-    tilted_square()
+        # bonus: you could have a separate function for drawing a square,
+        # which might be useful later:
 
-    # bonus: you could have a separate function for drawing a square,
-    # which might be useful later:
+        def square():
+          for _ in range(4):
+              turtle.forward(50)
+              turtle.left(90)
 
-    def square():
-      for _ in range(4):
-          turtle.forward(50)
-          turtle.left(90)
+        def tilted_square():
+          turtle.left(20)
+          square()
 
-    def tilted_square():
-      turtle.left(20)
-      square()
-
-    # etc
+        # etc
 
 A function for a hexagon
 ========================
@@ -136,22 +136,20 @@ Give it a good go!
    makes it easier to reason about.
 
 
-.. rst-class:: solution
+.. admonition:: Solution
+   :collapsible: closed
 
-Solution
---------
+    .. code-block:: python
 
-::
+        def hexagon():
+          for _ in range(6):
+              turtle.forward(100)
+              turtle.left(60)
 
-    def hexagon():
-      for _ in range(6):
-          turtle.forward(100)
-          turtle.left(60)
-
-    for _ in range (6):
-        hexagon()
-        turtle.forward(100)
-        turtle.right(60)
+        for _ in range (6):
+            hexagon()
+            turtle.forward(100)
+            turtle.right(60)
 
 You could also put the ``turtle.forward(100); turtle.right(60)`` portion in the
 function, but you better not call it ``hexagon`` in that case.  That's

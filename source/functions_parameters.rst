@@ -55,17 +55,15 @@ Exercise
 Write a function that allows you to draw hexagons of any size you want, each
 time you call the function.
 
-.. rst-class:: solution
+.. admonition:: Solution
+   :collapsible: closed
 
-Solution
---------
+    .. code-block:: python
 
-::
-
-    def hexagon(size):
-        for _ in range(6):
-            turtle.forward(size)
-            turtle.left(60)
+        def hexagon(size):
+            for _ in range(6):
+                turtle.forward(size)
+                turtle.left(60)
 
 A function of several parameters
 ================================
@@ -84,17 +82,15 @@ Here's an example of drawing shapes with this function:
 
    The sum of the external angles of any shape is always 360 degrees!
 
-.. rst-class:: solution
+.. admonition:: Solution
+   :collapsible: closed
 
-Solution
---------
+    .. code-block:: python
 
-::
-
-    def draw_shape(sides, length):
-        for _ in range(sides):
-            turtle.forward(length)
-            turtle.right(360 / sides)
+        def draw_shape(sides, length):
+            for _ in range(sides):
+                turtle.forward(length)
+                turtle.right(360 / sides)
 
 Bonus
 -----

@@ -22,8 +22,9 @@ Python 3 is preferable, being the newest version out!
    When installing Python 3.5 or later, there should be tick box 
    option to do this on the first page of the installer. Make sure you tick this on.
 
-   Otherwise, you can run the script under :file:`\Tools\Scripts\win_add2path.py`
-   where you installed Python.
+   Otherwise, you can navigate to your installation directory (``C:\Python34\``),
+   open the ``Tools``, then ``Scripts`` folder, and run the ``win_add2path.py`` file
+   by double clicking on it.
 
 And a Code Editor
 -----------------
@@ -131,6 +132,8 @@ You can find these in the Start menu.
 Using Python
 ============
 
+.. remove these three paragraphs and replace them with an introduction to open thonny in labor
+
 The python program that you have installed will by default act as something 
 called an **interpreter**. An interpreter takes text commands and runs 
 them as you enter them - very handy for trying things out.
@@ -146,14 +149,13 @@ Interacting With Python
 
 After Python opens, it will show you some contextual information similar to this::
 
-    Python 3.5.0 (default, Sep 20 2015, 11:28:25) 
-    [GCC 5.2.0] on linux
+    Python 3.13.3 (main, Apr  9 2025, 08:55:02) [GCC 11.4.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>> 
 
 .. note::
 
-   The prompt **>>>** on the last line indicates that you are now in an
+   The prompt ``>>>`` on the last line indicates that you are now in an
    interactive Python interpeter session, also called the "Python shell".
    **This is different from the normal terminal command prompt!**
 
@@ -186,27 +188,26 @@ Just above we demonstrated entering a command to figure out some math. Try
 some math commands of your own! What operations does python know? Get it 
 to tell you what 239 and 588 added together, and then squared is.
 
-.. rst-class:: solution
+.. admonition:: Solution
+   :collapsible: closed
 
-Solution
---------
+    Here are  some ways you might have got the answer:
 
-Here are  some ways you might have got the answer:
+        >>> 239 + 588
+        827
+        >>> 827 * 827
+        683929
 
+        >>> (239 + 588) * (239 + 588)
+        683929
 
-    >>> 239 + 588
-    827
-    >>> 827 * 827
-    683929
-
-    >>> (239 + 588) * (239 + 588)
-    683929
-
-    >>> (239 + 588) ** 2
-    683929
+        >>> (239 + 588) ** 2
+        683929
 
 Running Python files
 --------------------
+
+.. rewrite this section to use thonny
 
 When you have a lot of python code to run, you will want to save it into 
 a file, so for instance, you can modify small parts of it (fix a bug) and 

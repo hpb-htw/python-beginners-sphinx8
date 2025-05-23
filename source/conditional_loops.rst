@@ -60,7 +60,7 @@ It's a bit of a stretch but keep at it! Don't be afraid to talk it out
 with a coach or another student.
 
 .. admonition:: Solution
-   :collapsible:
+   :collapsible: closed
 
     .. code-block:: python
 
@@ -98,20 +98,18 @@ respectively.
    forward by an increasing value.
 
 .. admonition:: Solution
-   :collapsible:
+   :collapsible: closed
 
     .. code-block:: python
 
         def draw_spiral(radius):
             original_xcor = turtle.xcor()
             original_ycor = turtle.ycor()
-            speed = 1
-            while True:
-                turtle.forward(speed)
+            length = 1.0
+            while turtle.distance(original_xcor, original_ycor) <= radius:
+                turtle.forward(length)
                 turtle.left(10)
-                speed += 0.1
-                if turtle.distance(original_xcor, original_ycor) > radius:
-                    break
+                length += 0.1
 
 Bonus
 -----

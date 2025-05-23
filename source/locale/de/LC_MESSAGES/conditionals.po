@@ -138,11 +138,11 @@ msgid ""
 "Try adding ``direction = direction.strip().lower()`` to the ``move()`` "
 "function, to see the effect. We often call this kind of code \"data "
 "munging\", and it is very common."
-msgstr "Versuche den Befehl ``direction = direction.strip().lower()`` zu der Funktion ``move()`` hinzuzufügen. Beobachte die Auswirkungen. Diese Art von Code wird von uns ''data munging'' (Datenbastelei) genannt. Sie ist sehr häufig."
+msgstr "Versuche den Befehl ``direction = direction.strip().lower()`` zu der Funktion ``move()`` hinzuzufügen. Beobachte die Auswirkungen. Diese Art von Code wird von uns „data munging“ (Datenbastelei) genannt. Sie ist sehr häufig."
 
 #: ../../source/conditionals.rst:103 c3ebf2fa25e04f1bbe2bcd68abeb37a8
 msgid ""
 "Can you add some extra input choices to make the turtle draw other "
 "things? How about ``hexagon``?"
-msgstr "Kannst Du einig zusätzliche Eingabeoptionen hinzufügen, die die Schildkröte andere Dinge zeichnen lassen? Wie wäre es mit einem ''Sechseck'' (``hexagon``)?"
+msgstr "Kannst Du einig zusätzliche Eingabeoptionen hinzufügen, die die Schildkröte andere Dinge zeichnen lassen? Wie wäre es mit einem „Sechseck“ (``hexagon``)?"
 
